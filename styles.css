@@ -128,3 +128,58 @@ nav {
     background-color: var(--white);
     border-radius: 5px;
 }
+
+.header__container {
+    display: grid;
+    gap: 2rem;
+}
+
+.header__image {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.header__image img {
+    max-width: 450px;
+    margin-inline: auto;
+}
+
+img.header-bg {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 350px;
+    opacity: 0.05;
+    z-index: -1;
+}
+
+.header__image__content {
+    text-align: center;
+}
+
+.header__image__content h4 {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.header__content {
+    text-align: center;
+}
+
+.header__content h1 {
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: var(--header-font);
+    color: var(--text-dark);
+    line-height: 3rem;
+}
+
+.header__content p {
+    font-weight: 500;
+    color: var(--text-light);
+}
