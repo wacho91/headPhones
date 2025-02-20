@@ -39,3 +39,14 @@ ScrollReveal().reveal(".header__image__content ", {
     duration: 1000,
     delay: 1500,
 });
+
+ScrollReveal().reveal(".product__image img", {
+    ...scrollRevealOption,
+    origin: "left",
+});
+
+ScrollReveal().reveal(".product__card", {
+    ...scrollRevealOption,
+    delay: 500,
+    interval: 500,
+});
